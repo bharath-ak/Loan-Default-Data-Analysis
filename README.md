@@ -150,3 +150,33 @@ The goal is to support data-driven decision-making by visualizing the critical f
 25. Published the Power BI report.
 
 26. Set up scheduled refresh for Dataflow.
+
+---
+
+## 🔍 Insights
+🏦 Loan Characteristics & Trends
+- Loan Amount by Purpose shows which types of loans (e.g., business, education, home) are the most common or highest in value. Some purposes (like business or home) might have consistently higher loan amounts.
+- YOY Loan Amount Change indicates fluctuations in lending trends across years. A rise could imply increasing borrowing or easier lending, while a drop could reflect tighter loan policies or economic slowdown.
+- YTD Loan Amount segmented by Credit Score Bins and Marital Status shows that individuals with higher credit scores and those who are married often account for higher cumulative loan amounts.
+
+👥 Demographics & Behavior
+- Average Income by Employment Type reveals employment categories earning more and helps correlate income with default behavior.
+- Age Group Analysis:
+-- Young Adults (19–39) tend to dominate loan activity in terms of volume.
+-- Adults (40–59) may be more consistent in repayments.
+-- Teen and Senior Citizens are least represented and could pose higher risk.
+- Loan Amount by Age Group highlights which age bracket takes the largest loans.
+
+📉 Defaults & Risk Factors
+- Default Rate by Employment Type shows which job categories are riskier — e.g., unemployed or part-time might show higher default rates.
+- Default Rate by Year provides a view of how financial stress or economic events influence repayment behavior over time.
+- YOY Default Loan Change can point to deteriorating or improving borrower discipline or financial health.
+- Credit Score Bins vs Median Loan Amount: Applicants with higher credit scores typically receive larger loans, aligning with risk-based lending practices.
+
+🎓 Education, Income & Risk
+- Loan by Education Type helps identify whether educational background influences access to loans or likelihood of default.
+- Income Bracket Segmentation (Low, Medium, High) can reveal the financial capacity of borrowers and their risk exposure. High-income individuals are often less risky.
+
+📊 Advanced Visuals & Segment Analysis
+- Decomposition Tree pinpoints loan amount variation drivers like Income Bracket and Employment Type — useful for decision-making and segmentation.
+- Clustered Column Charts analyze the relationship between having dependents, home ownership (mortgage), and total loan volume — which can help assess family financial stability.
