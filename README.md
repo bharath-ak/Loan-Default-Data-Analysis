@@ -83,11 +83,11 @@ The goal is to support data-driven decision-making by visualizing the critical f
     MEDIANX(Loan_default, Loan_default[LoanAmount])
   
 16. Created measure: Average Loan Amount (High Credit), built pie chart with:
+- Average Loan Amount (High Credit) = 
+    AVERAGEX(FILTER(Loan_default, Loan_default[Credit Score Bins] = "High"), Loan_default[LoanAmount])
    - Values: Average Loan Amount (High Credit)
    - Legend: Age Group
    - Details: Marital Status
-- Average Loan Amount (High Credit) = 
-    AVERAGEX(FILTER(Loan_default, Loan_default[Credit Score Bins] = "High"), Loan_default[LoanAmount])
   
 17. Created measure: Total Loan (Credit Bins) for "Young Adults" and visualized in a line chart (X-axis: Credit Score Bins).
 - Total Loan (Credit Bins) = 
@@ -96,11 +96,11 @@ The goal is to support data-driven decision-making by visualizing the critical f
         ALLEXCEPT(Loan_default, Loan_default[Age], Loan_default[Age Group], Loan_default[CreditScore], Loan_default[Credit Score Bins]))
     
 18. Created measure: Total Loan (Adults) and visualized in a clustered column chart with:
+- Total Loan (Adults) = 
+    SUMX(FILTER(Loan_default, Loan_default[Age Group] = "Adult"), Loan_default[LoanAmount])
    - Y-axis: Total Loan (Adults)
    - X-axis: Has Mortgage
    - Legend: Has Dependent
-- Total Loan (Adults) = 
-    SUMX(FILTER(Loan_default, Loan_default[Age Group] = "Adult"), Loan_default[LoanAmount])
 
 19. Created measure: Loan by Education Type and visualized in a line chart with Education Type as X-axis.
 - Loan by Education Type = 
@@ -125,15 +125,15 @@ The goal is to support data-driven decision-making by visualizing the critical f
     ) * 100
 
 22. Created measure: YTD Loan Amount, used in a ribbon chart with:
-   - Y-axis: YTD Loan Amount
-   - X-axis: Credit Score Bins
-   - Legend: Marital Status
 - YTD Loan Amount = 
     CALCULATE(
         SUM(Loan_default[LoanAmount]),
         DATESYTD(Loan_default[Loan_Date_DD_MM_YYYY].[Date]),
         ALLEXCEPT(Loan_default, Loan_default[Credit Score Bins], Loan_default[MaritalStatus])
     )
+   - Y-axis: YTD Loan Amount
+   - X-axis: Credit Score Bins
+   - Legend: Marital Status
   
 23. Created new column: Income Bracket based on Income.
 - Income Bracket = 
