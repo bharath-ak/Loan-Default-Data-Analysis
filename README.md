@@ -144,8 +144,8 @@ The goal is to support data-driven decision-making by visualizing the critical f
         Loan_default[Income]>60000,"High")
   
 24. Built decomposition tree:
-   - Analyze: Loan Amount
-   - Explain by: Income Bracket, Employment Type
+    - Analyze: Loan Amount
+    - Explain by: Income Bracket, Employment Type
 
 25. Published the Power BI report.
 
