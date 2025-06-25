@@ -162,9 +162,9 @@ The goal is to support data-driven decision-making by visualizing the critical f
 👥 Demographics & Behavior
 - Average Income by Employment Type reveals employment categories earning more and helps correlate income with default behavior.
 - Age Group Analysis:
--- Young Adults (19–39) tend to dominate loan activity in terms of volume.
--- Adults (40–59) may be more consistent in repayments.
--- Teen and Senior Citizens are least represented and could pose higher risk.
+   - Young Adults (19–39) tend to dominate loan activity in terms of volume.
+   - Adults (40–59) may be more consistent in repayments.
+   - Teen and Senior Citizens are least represented and could pose higher risk.
 - Loan Amount by Age Group highlights which age bracket takes the largest loans.
 
 📉 Defaults & Risk Factors
