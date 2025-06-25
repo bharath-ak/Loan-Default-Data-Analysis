@@ -31,9 +31,9 @@ The goal is to support data-driven decision-making by visualizing the critical f
 4. Switched to “Column profiling based on entire dataset”.
    
 5. Enabled full data profiling in Power Query Editor:
-- Checked “Column distribution”
-- Checked “Column quality”
-- Checked “Column profile”
+   - Checked “Column distribution”
+   - Checked “Column quality”
+   - Checked “Column profile”
 
 6. Inserted shapes for titles: "Loan Default & Overview", "Applicant Demographics & Financial Profile", "Financial Risk Metrics"
 
@@ -83,9 +83,9 @@ The goal is to support data-driven decision-making by visualizing the critical f
     MEDIANX(Loan_default, Loan_default[LoanAmount])
   
 16. Created measure: Average Loan Amount (High Credit), built pie chart with:
-- Values: Average Loan Amount (High Credit)
-- Legend: Age Group
-- Details: Marital Status
+   - Values: Average Loan Amount (High Credit)
+   - Legend: Age Group
+   - Details: Marital Status
 - Average Loan Amount (High Credit) = 
     AVERAGEX(FILTER(Loan_default, Loan_default[Credit Score Bins] = "High"), Loan_default[LoanAmount])
   
@@ -96,9 +96,9 @@ The goal is to support data-driven decision-making by visualizing the critical f
         ALLEXCEPT(Loan_default, Loan_default[Age], Loan_default[Age Group], Loan_default[CreditScore], Loan_default[Credit Score Bins]))
     
 18. Created measure: Total Loan (Adults) and visualized in a clustered column chart with:
-- Y-axis: Total Loan (Adults)
-- X-axis: Has Mortgage
-- Legend: Has Dependent
+   - Y-axis: Total Loan (Adults)
+   - X-axis: Has Mortgage
+   - Legend: Has Dependent
 - Total Loan (Adults) = 
     SUMX(FILTER(Loan_default, Loan_default[Age Group] = "Adult"), Loan_default[LoanAmount])
 
@@ -125,9 +125,9 @@ The goal is to support data-driven decision-making by visualizing the critical f
     ) * 100
 
 22. Created measure: YTD Loan Amount, used in a ribbon chart with:
-- Y-axis: YTD Loan Amount
-- X-axis: Credit Score Bins
-- Legend: Marital Status
+   - Y-axis: YTD Loan Amount
+   - X-axis: Credit Score Bins
+   - Legend: Marital Status
 - YTD Loan Amount = 
     CALCULATE(
         SUM(Loan_default[LoanAmount]),
@@ -144,8 +144,8 @@ The goal is to support data-driven decision-making by visualizing the critical f
         Loan_default[Income]>60000,"High")
   
 24. Built decomposition tree:
-- Analyze: Loan Amount
-- Explain by: Income Bracket, Employment Type
+   - Analyze: Loan Amount
+   - Explain by: Income Bracket, Employment Type
 
 25. Published the Power BI report.
 
